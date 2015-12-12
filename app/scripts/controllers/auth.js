@@ -9,6 +9,8 @@ app.controller('AuthCtrl', function($scope, $location, Auth, user) {
   $scope.login = function() {
     Auth.login($scope.user).then(function() {
       $location.path('/');
+    }, function(error) {
+      $scope.error = error.toString();
     });
   };
 
@@ -17,6 +19,8 @@ app.controller('AuthCtrl', function($scope, $location, Auth, user) {
       return Auth.login($scope.user).then(function() {
         $location.path('/');
       });
+    }, function(error) {
+      $scope.error = error.toString();
     });
   };
 });
