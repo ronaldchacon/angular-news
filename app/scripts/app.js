@@ -18,7 +18,7 @@ app.config(function ($routeProvider) {
       templateUrl: 'views/posts.html',
       controller: 'PostsCtrl'
     })
-    .when('/post/:postId', {
+    .when('/posts/:postId', {
       templateUrl: 'views/showpost.html',
       controller: 'PostViewCtrl'
     })
@@ -39,6 +39,10 @@ app.config(function ($routeProvider) {
           return Auth.resolveUser();
         }
       }
+    })
+    .when('/users/:userId', {
+      templateUrl: 'views/profile.html',
+      controller: 'ProfileCtrl'
     })
     .otherwise({
       redirectTo: '/'
