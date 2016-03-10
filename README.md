@@ -1,12 +1,17 @@
-# ang-news
+# Angular News
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.14.0.
+An Angular 1 application built with similar functionality as Reddit/Hacker News. 
 
-## Build & development
+### Stack
+- Angular 
+- Firebase
+- AngularFire *For 3-way data binding*
 
-Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+### Use Cases
+- A guess can read link submissions and link submission comments
+- A user can signup for an account
+- A user can read link submissions
+- A user can upvote/downvote link submissions
+- A user can comment on a link submissions
+- A user can upvote/downvote link submissions
