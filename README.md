@@ -5,7 +5,7 @@ An Angular 1 application built with similar functionality as Reddit/Hacker News.
 ### Stack
 - Angular 
 - Firebase
-- AngularFire *For 3-way data binding*
+- AngularFire - **_For 3-way data binding_**
 
 
 ### Use Cases
